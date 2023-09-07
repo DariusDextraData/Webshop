@@ -25,34 +25,34 @@ include('Produkteingabe/Navbar.php');
         <h1 style="font-family: Arial;">Kundenregistrierung Pengu-PC</h1>
         <div class="inputs_container">
             <p style="font-family: Arial;">Bitte geben sie ihren Vornamen ein!</p>
-             <input type="text" placeholder="Vorname" name="Vorname" autocomplete="off" required> <br>
+             <input type="text" placeholder="Vorname" name="Vorname" autocomplete="off" required placeholder = "Vorname"> <br>
             
             <p style="font-family: Arial;">Bitte geben sie ihren Nachname ein!</p>
-            <input type="text" placeholder="Nachname" name="Nachname" autocomplete="off" required> <br>
+            <input type="text" placeholder="Nachname" name="Nachname" autocomplete="off" required placeholder = "Nachname"> <br>
             
             <p style="font-family: Arial;">Bitte geben sie ihre E-Mail ein!</p>
-            <input type="text" placeholder="E-Mail" name="EMail" autocomplete="off" required> <br>
+            <input type="text" placeholder="E-Mail" name="EMail" autocomplete="off" required placeholder = "E-Mail"> <br>
             
             <p style="font-family: Arial;">Bitte geben Sie Ihre Telefonnummer ein!</p>
-            <input type="text" placeholder="Telefonnummer" name="Telefon" autocomplete="off" required> <br>
+            <input type="text" placeholder="Telefonnummer" name="Telefon" autocomplete="off" required placeholder = "Telefonnummer"> <br>
             
             <p style="font-family: Arial;">Bitte geben sie ihre Straße ein!</p>
-            <input type="text" placeholder="Adresse" name="Adresse" autocomplete="off" required> <br>
+            <input type="text" placeholder="Adresse" name="Adresse" autocomplete="off" required placeholder = "Straße" placeholder = "Straße"> <br>
             
             <p style="font-family: Arial;">Bitte geben sie ihre Hausnummer ein!</p>
-            <input type="text" placeholder="Hausnummer" name="Hausnummer" autocomplete="off" required> <br>
+            <input type="text" placeholder="Hausnummer" name="Hausnummer" autocomplete="off" required placeholder = "Hausnummer"> <br>
 
             <p style="font-family: Arial;">Bitte geben Sie Ihren Wohnort an! (Land)</p>
-            <input type="text" placeholder="Wohnort" name="Wohnort" autocomplete="off" required>  <br>
+            <input type="text" placeholder="Wohnort" name="Wohnort" autocomplete="off" required placeholder = "Wohnort">  <br>
 
             <p style="font-family: Arial;">Geben sie die Postleitzahl</p>
             <input type="text" placeholder="Postleitzahl" name="PLZ" autocomplete="off" required> <br>
 
             <p style="font-family: Arial;">Geben sie ein Passwort ein welches mindestens 8 Zeichen lang sein muss!</p>
-            <input type="password" placeholder="Passwort" name="password" autocomplete="off" required> <br>
+            <input type="password" placeholder="Passwort" name="password" autocomplete="off" required placeholder = "Passwort"> <br>
             
             <p style="font-family: Arial;">Bitte bestätigen sie ihr Passwort!</p>
-            <input type="password" placeholder="Passwort" name="b_password" autocomplete="off" required> <br>
+            <input type="password" placeholder="Passwort" name="b_password" autocomplete="off" required placeholder = "Passwort wiederholen"> <br>
         </div>
         <button class='Warenkorbbttn' type="submit" name="Registrieren" value="Konto Registrieren" autocomplete="off" > Registrieren </button>
     </form>

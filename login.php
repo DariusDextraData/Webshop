@@ -24,7 +24,7 @@ $password = $_POST["password"];
 <h2>Login</h2>
 	<form method="post" action="login.php">
 		<label for="email">E-Mail:</label>
-		<input type="email" name="email" required><br>
+		<input type="email" name="email" required placeholder= "E-mail"><br>
 
 		<label for="passwort">Passwort:</label>
 		<input type="password" name="passwort" required placeholder= "Passwort"><br>
