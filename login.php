@@ -27,7 +27,7 @@ $password = $_POST["password"];
 		<input type="email" name="email" required><br>
 
 		<label for="passwort">Passwort:</label>
-		<input type="password" name="passwort" required><br>
+		<input type="password" name="passwort" required placeholder= "Passwort"><br>
 
 		<input class='Warenkorbbttn' type="submit" name="login" value="Login">
 	</form>
