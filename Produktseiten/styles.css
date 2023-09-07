@@ -1,0 +1,462 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  text-decoration: none;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #19dbbb;
+  font-family: Arial;
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+  position: relative;
+}
+
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropbtn {
+  font-size: 25px; /* Schriftgröße */
+  border: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  outline: none;
+  color: white;
+  padding: 22px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Wichtig für vertikale ausrichtung am Handy */
+  margin: 0; /* Wichtig für vertikale ausrichtung am Handy */
+  transition: 0.4s;
+}
+
+/* Hintergrund Farbe für die Navbar und ein Hover effect */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #00685f;
+  border-radius: 8px;
+
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #00685f;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links im dropdown menü */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  transition: 0.4s;
+}
+
+/* Hintergrundfarbe vom Dropdown menü mit Hover effekt */
+.dropdown-content a:hover {
+  background-color: #19dbbb;
+  border-radius: 8px;
+}
+
+/* Zeigt das Dropdown Menü, wenn man mit der Maus drüber Hovert */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+.main-eingabe {
+  width: 400px;
+  height: 888px;
+  margin: auto;
+  margin-top: 30px;
+  font-family: Arial; /* Schriftart */
+  text-align: center;
+  background-color: #19dbbb; /* Green */
+  border: none;
+  vertical-align: middle;
+  color: white; /*Schriftfarbe*/
+  font-size: 16px; /*Schriftgröße*/
+  padding: 8px 15px; /*Größe des Buttons*/
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*Leichter Schatten um die Box*/
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hintergrund der Gesamten Seite */
+.body {
+  background-color: gray;
+}
+
+.Senbutton {
+  position: relative;
+  top: 20px; 
+
+  background-color: #19dbbb; /* Hintergrundfarbe */
+  border: none; /* Keine Ausengrenzen */
+  vertical-align: middle; 
+  color: white; /* Schriftfarbe */
+  font-size: 16px; /* Schriftgröße */
+  padding: 8px 15px; /* Größe des Buttons */
+  border-radius: 5px; /* Abgerundete Ecken */
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer; /* Cursor ändert sich beim drüber hovern */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Leichter Schatten um die Box */
+}
+
+/* Login und Warenkorb class */
+
+.Select {
+  position: relative;
+  left: 220px;
+  top: 100px; 
+
+
+  background-color: #19dbbb; /* Green */
+  border: none;
+  vertical-align: middle;
+  color: white; /*Schriftfarbe*/
+  font-size: 16px; /*Schriftgröße*/
+  padding: 8px 15px; /*Größe des Buttons*/
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*Leichter Schatten um die Box*/
+}
+
+.Auswahl{
+  width: 110px;
+  height: 30px;
+  background-color: #19dbbb; /* Green */
+  border: none;
+  margin: auto;
+  font-family: Arial; 
+  color: white; /*Schriftfarbe*/
+  font-size: 16px; /*Schriftgröße*/
+  
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*Leichter Schatten um die Box*/
+}
+.H2{
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Arial; /* Schriftart */
+  text-align: center;
+  color: white; /*Schriftfarbe*/
+  font-size: 16px; /*Schriftgröße*/
+}
+.Produkteingabe{
+  width: 450px;
+  margin: auto;
+  margin-top: -20px;
+  text-align: center;
+  background-color: #14b197;  /* Green */
+  border: none;
+  vertical-align: middle;
+  color: white;               /*Schriftfarbe*/
+  font-size: 16px;              /*Schriftgröße*/
+  font-family: Arial;           /* Schriftart */
+  padding: 8px 15px;            /*Größe des Buttons*/
+  border-radius: 5px;
+  animation: something 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  text-decoration: none;
+}
+
+.textarea {
+  background-size: 100%;
+  border-radius:6px; 
+  border:2px solid rgb(248, 8, 8);
+  outline: none; 
+}
+
+.ProduktBild {
+  width: 50px;
+  height: 50px;
+}
+.rightStuff {
+  width: auto;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.Logo{
+  position: relative;
+  margin: auto;
+  margin-left: 25%;
+  margin-right: 35%;
+  
+  }
+
+.warlog { 
+  width: 60px;
+  height: 60px;
+
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+  transition: 0.4s;
+}
+.warlog:hover {
+  animation: something 1s;
+    
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  width: 70px;
+  height: 70px;
+}
+/* Ausrichtung des Buttons Startseite */
+.Startseite {
+  position: relative;
+
+  padding: 22px 16px; /* Größe des Feldes */
+  font-size: 25px; /* Schriftgröße */
+  text-decoration: none;
+  color: white;
+}
+.rightStuff a {
+  margin: auto;
+  margin-right: 25px;
+}
+
+
+.alleArtikel {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 25px;
+  padding-bottom: 25px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.artikelReihe {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-top: 30px;
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.item {
+  width: 450px;
+  height: 350px;
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  background-color: #14b197;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 5px; /* Abgerundete Ecken */
+
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s;
+}
+
+.item:hover {
+  background-color: #108d78;
+
+  animation: something 1s;
+    
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.ProduktHeader {
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  color:white;
+}
+
+.ProduktHeader:hover {
+  animation: something 1s;
+    
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.ArtikelBilder {
+  max-width: 330px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.ArtikelBilder:hover {
+  animation: something 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.Warenkorbbttn {
+  width: 170px;
+  background-color: #19dbbb; /* Hintergrundfarbe */
+  margin: auto;
+  color: black; /* Schriftfarbe */
+  font-size: 16px; /* Schriftgröße */
+  padding: 6px; /* Größe des inneren Abstandes */
+  border-radius: 5px; /* Abgerundete Ecken */
+  text-decoration: none;
+  cursor: pointer; /* Cursor ändert sich beim drüber hovern */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Leichter Schatten um die Box */
+  transition: 0.4s;
+}
+.Warenkorbbttn:hover {
+  width: 180px;
+}
+
+.buttons {
+  margin-bottom: 10px;
+
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+.buttons:hover {
+  animation: something 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.ProduktPreis{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 27px;
+  text-decoration: none;
+  color:white;
+}
+.ProduktPreis:hover {
+  animation: something 1s; 
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+/* ____________________________________________________________________________________________ */
+/*                                      Produkt.php                                             */
+
+.produktAlles {
+  width: 1500px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.divsOben {
+  display: flex;
+  flex-direction: row;
+}
+
+.linksDasBild {
+  left: 0;
+  width: 43%;
+  margin-right: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.produktBild {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+
+}
+
+.rechtsDieBeschreibung {
+  width: 57%;
+  margin-left: 10px;
+
+  background-color: #14b197;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+  display: flex;
+  flex-direction: column;
+}
+.platzhalter {
+  width: 43%;
+  height: 100%;
+  margin-right: 10px;
+}
+.knopfe {
+  width: 57%;
+  margin-top: 25px;
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #14b197;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+  display: flex;
+  flex-direction: row;
+}
+
+.HerstellerHeader {
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 27px;
+  text-decoration: none;
+  color:white;
+}
+
+.divsUnten {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.einzelnDetails {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color:white;
+  margin-left: 20px;
+}
+
+.gekauft {
+  width: 780px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #14b197;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+  opacity: 0.7;
+}
