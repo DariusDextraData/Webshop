@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +9,31 @@
 </head>
 
 <body>
-<html>
 
-<label>Festplatte</label>
-    <select name="Festplatte" onchange="getId(this.value);">
-        <option value="">Festplattenmodell wählen</option>
-        <?php
-        $query = "SELECT * FROM Festplatten";
-        $results = mysqli_query($con, $query);
-        foreach ($results as $Festplatte) 
-        ?>
-        <option value="<?php echo $Festplatten["ArtikelNr"]; ?>"><?php echo $Festplatten["Festplatte"]; ?></option>
-       </select>
+    <?php
 
+    $db_server = $_POST["db_server"];
+    $db_user = $_POST["db_user"];
+    $db_passwort = $_POST["passwort"];
+    $db_name = $_POST["db_name"];
 
+    $connect = mysqli_connect($db_server, $db_user, $db_passwort, $db_name) or die("Keine Verbindung möglich");
 
+    $sql = "SHOW TABLES FROM $db_name";
+    $result = $connect->query($sql);
 
+    echo '<form>';
+    echo '<select name="tables">';
+    while ($row = $result->fetch_assoc()) {
+        echo '<option value="' . $row['Tables_in_' . $db_name] . '">' . $row['Tables_in_' . $db_name] . '</option>';
+    }
+    echo '</select>';
+    echo '</form>';
 
+    $connect->close();
 
+    ?>
 
-
-
-
+</body>
 
 </html>
-</body>
