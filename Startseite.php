@@ -11,7 +11,7 @@
 $pfad = "ShopBilder/Logo.png";
 $Loginpfad = "ShopBilder/Login Icon.png";
 $warenPfad = "ShopBilder/Warenkorb Icon.png";
-include('Produkteingabe/Navbar.php');
+include('Navbar.php');
 $whileDurchlauf;
 ?>
 
@@ -105,6 +105,7 @@ include("Datenbank-Login.php");
 
                             <input class='Warenkorbbttn' type='submit' name='guckstDuProdukt' value='Produkt Ansehen' onClick="window.location.href = 'produkt.php?spiel=<?php echo $row['ArtikelNr']; ?>&&tabelle=ram';">
                             <?php echo "
+                        
                         </div>
                         ";
                         

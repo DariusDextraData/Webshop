@@ -8,18 +8,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
+
 <body>
 
     <?php
+    
+    include ('Produkteingabe/Navbar.php');
+    include("Datenbank-Login.php");
 
-    $db_server = $_POST["db_server"];
-    $db_user = $_POST["db_user"];
-    $db_passwort = $_POST["passwort"];
-    $db_name = $_POST["db_name"];
-
-    $connect = mysqli_connect($db_server, $db_user, $db_passwort, $db_name) or die("Keine Verbindung möglich");
-
-    $sql = "SHOW TABLES FROM $db_name";
+    $Abfrage = "SHOW TABLES FROM $db_name";
     $result = $connect->query($sql);
 
     echo '<form>';
