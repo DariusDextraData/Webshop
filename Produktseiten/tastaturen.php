@@ -2,149 +2,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style2.css">
+    <link rel="stylesheet" href="Alt_style2.css">
 </head>
-
+<body class="body">
 
 <?php
-include '../Navbar.php';
+
+include('alte_Navbar.php');
+$whileDurchlauf;
 ?>
+<br>
 
-
-
-<?php/*_________________________________________________________________________________________________________________________________________________*/?>
+<?php /*_________________________________________________________________________________________________________________________________________________*/?>
 
 
 <?php
-//Datenbank verbindung
-$db_server = 'localhost'; 
-$db_user = 'root';
-$db_passwort = "";
-$db_name = "Pengu_PC";
+include("Datenbank-Login.php");
 
-$connect = mysqli_connect($db_server, $db_user, $db_passwort, $db_name) or die ("Keine Verbindung möglich");  //Verbindung zur Datenbank erstellen. 
 ?>
 <div class="grid-container">
-    <div class="item">
-    <?php   
-        $Abfrage = "SELECT Hersteller, Produktname FROM tastatur WHERE ArtikelNr = 1001000001;";
-        $ergebnis = mysqli_query($connect,$Abfrage);
-        $row = mysqli_fetch_array($ergebnis);
-        $output = $row['Hersteller']. ' ' . $row['Produktname'];
-        echo  "<h1 class='center'> $output </h1>";
-        echo "<input class='button' type='submit' name='Warenkorbhinzu' value='In den Warenkorb'>";
-    ?>
-    </div>
-    <div class="item">
-    <?php   
-        $Abfrage = "SELECT Hersteller, Produktname FROM tastatur WHERE ArtikelNr = 1001000001;";
-        $ergebnis = mysqli_query($connect,$Abfrage);
-        $row = mysqli_fetch_array($ergebnis);
-        $output = $row['Hersteller']. ' ' . $row['Produktname'];
-        echo  "<h1 class='center'> $output </h1>";
-        echo "<input class='button' type='submit' name='Warenkorbhinzu' value='In den Warenkorb'>";
-    ?>
-    </div>
-    <div class="item">
-    <?php   
-        $Abfrage = "SELECT Hersteller, Produktname FROM tastatur WHERE ArtikelNr = 1001000001;";
-        $ergebnis = mysqli_query($connect,$Abfrage);
-        $row = mysqli_fetch_array($ergebnis);
-        $output = $row['Hersteller']. ' ' . $row['Produktname'];
-        echo  "<h1 class='center'> $output </h1>";
-        echo "<input class='button' type='submit' name='Warenkorbhinzu' value='In den Warenkorb'>";
-    ?>
-    </div>
-    <div class="item">
-    <?php   
-        $Abfrage = "SELECT Hersteller, Produktname FROM tastatur WHERE ArtikelNr = 1001000001;";
-        $ergebnis = mysqli_query($connect,$Abfrage);
-        $row = mysqli_fetch_array($ergebnis);
-        $output = $row['Hersteller']. ' ' . $row['Produktname'];
-        echo  "<h1 class='center'> $output </h1>";
-        echo "<input class='button' type='submit' name='Warenkorbhinzu' value='In den Warenkorb'>";
-    ?>
-    </div>
-    <div class="item">
-    <?php   
-        $Abfrage = "SELECT Hersteller, Produktname FROM tastatur WHERE ArtikelNr = 1001000001;";
-        $ergebnis = mysqli_query($connect,$Abfrage);
-        $row = mysqli_fetch_array($ergebnis);
-        $output = $row['Hersteller']. ' ' . $row['Produktname'];
-        echo  "<h1 class='center'> $output </h1>";
-        echo "<input class='button' type='submit' name='Warenkorbhinzu' value='In den Warenkorb'>";
-    ?>
-    </div>
-    <div class="item">
-    <?php   
-        $Abfrage = "SELECT Hersteller, Produktname FROM tastatur WHERE ArtikelNr = 1001000001;";
-        $ergebnis = mysqli_query($connect,$Abfrage);
-        $row = mysqli_fetch_array($ergebnis);
-        $output = $row['Hersteller']. ' ' . $row['Produktname'];
-        echo  "<h1 class='center'> $output </h1>";
-        echo "<input class='button' type='submit' name='Warenkorbhinzu' value='In den Warenkorb'>";
-    ?>
-    </div>
-    <div class="item">
-    <?php   
-        $Abfrage = "SELECT Hersteller, Produktname FROM tastatur WHERE ArtikelNr = 1001000001;";
-        $ergebnis = mysqli_query($connect,$Abfrage);
-        $row = mysqli_fetch_array($ergebnis);
-        $output = $row['Hersteller']. ' ' . $row['Produktname'];
-        echo  "<h1 class='center'> $output </h1>";
-        echo "<input class='button' type='submit' name='Warenkorbhinzu' value='In den Warenkorb'>";
-    ?>
-    </div>
-    <div class="item">
-    <?php   
-        $Abfrage = "SELECT Hersteller, Produktname FROM tastatur WHERE ArtikelNr = 1001000001;";
-        $ergebnis = mysqli_query($connect,$Abfrage);
-        $row = mysqli_fetch_array($ergebnis);
-        $output = $row['Hersteller']. ' ' . $row['Produktname'];
-        echo  "<h1 class='center'> $output </h1>";
-        echo "<input class='button' type='submit' name='Warenkorbhinzu' value='In den Warenkorb'>";
-    ?>
-    </div>
-    <div class="item">
-    <?php   
-        $Abfrage = "SELECT Hersteller, Produktname FROM tastatur WHERE ArtikelNr = 1001000001;";
-        $ergebnis = mysqli_query($connect,$Abfrage);
-        $row = mysqli_fetch_array($ergebnis);
-        $output = $row['Hersteller']. ' ' . $row['Produktname'];
-        echo  "<h1 class='center'> $output </h1>";
-        echo "<input class='button' type='submit' name='Warenkorbhinzu' value='In den Warenkorb'>";
-    ?>
-    </div>
-    <div class="item">
-    <?php   
-        $Abfrage = "SELECT Hersteller, Produktname FROM tastatur WHERE ArtikelNr = 1001000001;";
-        $ergebnis = mysqli_query($connect,$Abfrage);
-        $row = mysqli_fetch_array($ergebnis);
-        $output = $row['Hersteller']. ' ' . $row['Produktname'];
-        echo  "<h1 class='center'> $output </h1>";
-        echo "<input class='button' type='submit' name='Warenkorbhinzu' value='In den Warenkorb'>";
-    ?>
-    </div>
-    <div class="item">
-    <?php   
-        $Abfrage = "SELECT Hersteller, Produktname FROM tastatur WHERE ArtikelNr = 1001000001;";
-        $ergebnis = mysqli_query($connect,$Abfrage);
-        $row = mysqli_fetch_array($ergebnis);
-        $output = $row['Hersteller']. ' ' . $row['Produktname'];
-        echo  "<h1 class='center'> $output </h1>";
-        echo "<input class='button' type='submit' name='Warenkorbhinzu' value='In den Warenkorb'>";
-    ?>
-    </div>
-    <div class="item">
-    <?php   
-        $Abfrage = "SELECT Hersteller, Produktname FROM tastatur WHERE ArtikelNr = 1001000001;";
-        $ergebnis = mysqli_query($connect,$Abfrage);
-        $row = mysqli_fetch_array($ergebnis);
-        $output = $row['Hersteller']. ' ' . $row['Produktname'];
-        echo  "<h1 class='center'> $output </h1>";
-        echo "<input class='button' type='submit' name='Warenkorbhinzu' value='In den Warenkorb'>";
-    ?>
-    </div>
+
+<?php   
+          $Abfrage = "SELECT Einzelpreis, ArtikelNr, Hersteller, Produktname FROM tastatur LIMIT 12";
+         $ergebnis = mysqli_query($connect,$Abfrage);
+         $whileDurchlauf = 0;                                                                   
+         while ($Artikel = mysqli_fetch_array($ergebnis)) {
+             include("Kachel.php");
+         }
+?>
+
 </div>
 
 </body>

@@ -1,0 +1,348 @@
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #19dbbb;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {  
+  float: right;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 30px; /* Schriftgröße */
+  border: none;
+  outline: none;
+  color: white;
+  padding: 22px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Wichtig für vertikale ausrichtung am Handy */
+  margin: 0; /* Wichtig für vertikale ausrichtung am Handy */
+}
+
+/* Hintergrund Farbe für die Navbar und ein Hover effect */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #00685f;
+  box-shadow: 0px 8px 16px 0px rgb(252, 252, 252);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #00685f;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links im dropdown menü */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  
+}
+
+.main-eingabe {
+  width: 400px;
+  height: 888px;
+  margin: auto;
+  margin-top: 30px;
+  font-family: Arial; /* Schriftart */
+  text-align: center;
+  background-color: #19dbbb; /* Green */
+  border: none;
+  vertical-align: middle;
+  color: white; /*Schriftfarbe*/
+  font-size: 16px; /*Schriftgröße*/
+  padding: 8px 15px; /*Größe des Buttons*/
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*Leichter Schatten um die Box*/
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hintergrundfarbe vom Dropdown menü mit Hover effekt */
+.dropdown-content a:hover {
+  background-color: #19dbbb;
+}
+
+/* Zeigt das Dropdown Menü, wenn man mit der Maus drüber Hovert */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Erzeugt ein Grid für die Pannels der Produkte */
+.grid-container  {
+  font-family: Arial; /* Schriftart */
+  font-size: 13px; /*Schriftgröße*/
+  justify-content:center;
+  align-content:end;
+  display: grid;
+  grid-template-columns: 375px 375px 375px 375px;
+  grid-auto-rows: 500px 500px 500px;
+  row-gap: 10px;
+  column-gap: 15px;
+ 
+}
+
+/* Hintergrund der Gesamten Seite */
+.body {
+  background-color: gray;
+}
+
+/* Hintergrund und Schatten für Pannels */
+.item  {
+  background-color: #00685f;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ 
+}
+.item img {
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+.KachelBild :hover {
+  height: 50%;
+ 
+}
+.KachelInhalt {
+  display: flex;
+  flex-direction: column ;
+  justify-content: space-between;
+}
+
+/* Ausrichtung der Überschrift im Pannel (Hersteller und Produktname) */
+.center {
+  text-align: center;
+  color:white;
+}
+
+/* Ausrichtung und Aussehen für den Button */
+.button {
+  position: relative; /* Ausrichtung */
+  left: 200px;
+  top: 380px;
+
+  background-color: #19dbbb; /* Hintergrundfarbe */
+  border: none; /* Keine Ausengrenzen */
+  vertical-align: middle; 
+  color: black; /* Schriftfarbe */
+  font-size: 16px; /* Schriftgröße */
+  padding: 8px 15px; /* Größe des Buttons */
+  border-radius: 5px; /* Abgerundete Ecken */
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer; /* Cursor ändert sich beim drüber hovern */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Leichter Schatten um die Box */
+}
+
+.Senbutton {
+  position: relative;
+  top: 20px; 
+
+  background-color: #19dbbb; /* Hintergrundfarbe */
+  border: none; /* Keine Ausengrenzen */
+  vertical-align: middle; 
+  color: white; /* Schriftfarbe */
+  font-size: 16px; /* Schriftgröße */
+  padding: 8px 15px; /* Größe des Buttons */
+  border-radius: 5px; /* Abgerundete Ecken */
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer; /* Cursor ändert sich beim drüber hovern */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Leichter Schatten um die Box */
+}
+
+/* Ausrichtung des Buttons Startseite */
+.Startseite {
+  position: relative;
+  right: 75.8%;
+
+  padding: 24px 16px; /* Größe des Feldes */
+  font-size: 35px; /* Schriftgröße */
+}
+
+/* Login und Warenkorb class */
+.warlog { 
+  position: relative;
+  right: -140px;
+}
+
+.Select {
+  position: relative;
+  left: 220px;
+  top: 100px; 
+
+
+  background-color: #19dbbb; /* Green */
+  border: none;
+  vertical-align: middle;
+  color: white; /*Schriftfarbe*/
+  font-size: 16px; /*Schriftgröße*/
+  padding: 8px 15px; /*Größe des Buttons*/
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*Leichter Schatten um die Box*/
+}
+
+.Auswahl{
+  position: relative;
+  left: 230px;
+  top: 100px; 
+  
+  background-color: #19dbbb; /* Green */
+  border: none;
+  font-family: Arial; 
+  vertical-align: middle;
+  color: white; /*Schriftfarbe*/
+  font-size: 16px; /*Schriftgröße*/
+  padding: 8px 15px; /*Größe des Buttons*/
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*Leichter Schatten um die Box*/
+}
+
+.H2{
+  position: relative;
+  left: 550px;
+  top: 30px; 
+  font-family: Arial; /* Schriftart */
+  text-align: center;
+  background-color: #19dbbb; /* Green */
+  border: none;
+  vertical-align: middle;
+  color: white; /*Schriftfarbe*/
+  font-size: 16px; /*Schriftgröße*/
+  padding: 8px 15px; /*Größe des Buttons*/
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*Leichter Schatten um die Box*/
+}
+
+.Logo{
+
+  position: relative;
+   left: 200px;
+   top: 360px; 
+}
+
+.grid-Login{
+  background-color:  #00685f;
+  justify-content:center;
+  align-content:end;
+  display: grid;
+  grid-template-columns: 375px;
+  grid-auto-rows: 500px ;
+  row-gap: 10px;
+  column-gap: 10px;
+  
+}
+
+.Produkteingabe{
+width: 450px;
+margin: auto;
+margin-top: -20px;
+text-align: center;
+background-color: #14b197;  /* Green */
+border: none;
+vertical-align: middle;
+color: white;               /*Schriftfarbe*/
+font-size: 16px;              /*Schriftgröße*/
+font-family: Arial;           /* Schriftart */
+padding: 8px 15px;            /*Größe des Buttons*/
+border-radius: 5px;
+animation: something 1s;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+text-decoration: none;
+}
+
+.ArtikelBilder:hover {
+animation: something 1s;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+}
+
+.Warenkorbbttn {
+width: 150px;
+background-color: #19dbbb; /* Hintergrundfarbe */
+margin: auto;
+color: rgb(255, 255, 255); /* Schriftfarbe */
+font-size: 16px; /* Schriftgröße */
+padding: 6px; /* Größe des inneren Abstandes */
+border-radius: 5px; /* Abgerundete Ecken */
+text-decoration: none;
+cursor: pointer; /* Cursor ändert sich beim drüber hovern */
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Leichter Schatten um die Box */
+transition: 0.4s;
+
+}
+
+.Produktbbttn {
+width: 150px;
+background-color: #19dbbb; /* Hintergrundfarbe */
+margin: auto;
+color: rgb(255, 255, 255); /* Schriftfarbe */
+font-size: 16px; /* Schriftgröße */
+padding: 6px; /* Größe des inneren Abstandes */
+border-radius: 5px; /* Abgerundete Ecken */
+text-decoration: none;
+cursor: pointer; /* Cursor ändert sich beim drüber hovern */
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Leichter Schatten um die Box */
+transition: 0.4s;
+
+}
+
+.ProduktPreis{
+margin-top: 10px;
+margin-bottom: 10px;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+font-size: 27px;
+text-decoration: none;
+color:white;
+
+
+}
+.ProduktPreis:hover {
+animation: something 1s; 
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+
+}
+
+.item .Warenkorbbttn{
+justify-content:right;
+}
+
+.KachelButton {
+margin-top: 1em;
+display: flex;
+justify-content: space-between;
+
+}
